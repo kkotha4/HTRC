@@ -19,12 +19,12 @@ with open('/home/dcuser/kashish/HTRC/data.json') as f:
 #convert all the volume id's into list
 volume_ids=list(data)
 tok=volumes.get_oauth2_token('kkothari442', 'K@shish99')
-print(token)
-v=volumes.get_volumes(token, [volume_ids[0]], concat=True)
+#print(token)
+v=volumes.get_volumes(tok, [volume_ids[0]], concat=True)
 #print(vol)
 volume = [volume_ids[0]]
 output_directory="kk"
-volumes.download_volumes([volume_ids[0]],output_directory,token=tok,concat=True)
+volumes.download_volumes([volume_ids[0]],output_directory)
 
 
 print("completed")
