@@ -6,7 +6,7 @@ Created on Thu Mar  7 21:19:56 2019
 @author: kashish
 """
 import json
-with open('/kashish/data.json') as f:
+with open('/kashish/HTRC/data.json') as f:
     data = json.load(f)
 
 ls=list(data) 
