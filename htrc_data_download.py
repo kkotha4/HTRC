@@ -23,7 +23,7 @@ tok=volumes.get_oauth2_token('kkothari442', 'K@shish99')
 v=volumes.get_volumes(tok, [volume_ids[0]], concat=True)
 #print(vol)
 volume = [volume_ids[0]]
-output_directory="kk"
+output_directory="kk1"
 volumes.download_volumes([volume_ids[0]],output_directory)
 
 
