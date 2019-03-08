@@ -22,7 +22,7 @@ volume_ids=list(data)
 volume = [volume_ids[0]]
 output_directory="kk"
 
-volumes.download(volume, output_directory) 
+volumes.download(volume) 
 
 
 print("completed")
